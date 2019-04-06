@@ -1,0 +1,19 @@
+{
+  "name": "ts-package-example",
+  "version": "0.0.0",
+  "description": "Example package for messing around with publishing a TypeScript package on NPM/Verdaccio",
+  "homepage": "https://github.com/G-Rath/ts-package-example#readme",
+  "bugs": {
+    "url": "https://github.com/G-Rath/ts-package-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-Rath/ts-package-example.git"
+  },
+  "license": "ISC",
+  "author": "Gareth Jones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
