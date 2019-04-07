@@ -5,5 +5,5 @@ export interface Supplementer {
 
   deregister(): void;
 
-  supplementLog<T = unknown>(log: Log<T>): Log<T>;
+  supplementLog(log: Log): Log;
 }

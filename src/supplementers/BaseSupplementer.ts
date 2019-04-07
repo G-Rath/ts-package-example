@@ -33,7 +33,7 @@ abstract class BaseSupplementer implements Supplementer {
     this._auditor = undefined;
   }
 
-  public abstract supplementLog<T = unknown>(log: Log<T>): Log<T>;
+  public abstract supplementLog(log: Log): Log;
 }
 
 export default BaseSupplementer;

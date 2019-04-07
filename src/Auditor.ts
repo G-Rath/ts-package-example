@@ -27,7 +27,7 @@ class Auditor {
     supplementer.deregister();
   }
 
-  public log<T = unknown>(value: T): Log<T> {
+  public log<T = unknown>(value: T): Log {
     const log = this._supplementLog({ value });
 
     this._trail.push(log);
@@ -35,7 +35,7 @@ class Auditor {
     return { ...log };
   }
 
-  private _supplementLog<T = unknown>(log: Log<T>): Log<T> {
+  private _supplementLog(log: Log): Log {
     return this._supplementers.reduce((composedLog, supplementer) => supplementer.supplementLog(composedLog), log);
   }
 }
