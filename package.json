@@ -14,12 +14,33 @@
   "author": "Gareth Jones",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx",
+      "node"
+    ],
+    "moduleNameMapper": {
+      "^@src/(.*)$": "<rootDir>/src/$1",
+      "^@test/(.*)$": "<rootDir>/test/$1"
+    },
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    }
+  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^24.0.11",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
     "eslint": "^5.16.0",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.4.2"
   }
 }
