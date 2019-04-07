@@ -6,6 +6,7 @@
     "lib": ["es2018"],
     "rootDir": "./",
     "baseUrl": "./",
+    "outDir": "./dist",
     "paths": {
       "@src/*": [ "./src/*" ],
       "@test/*": [ "./test/*" ]
