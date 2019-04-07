@@ -3,7 +3,7 @@
     "target": "es2015",
     "module": "es2015",
     "moduleResolution": "node",
-    "lib": ["es2018"],
+    "lib": [ "es2018" ],
     "rootDir": "./",
     "baseUrl": "./",
     "outDir": "./dist",
@@ -31,6 +31,7 @@
     "sourceMap": true,
     "removeComments": true,
     "esModuleInterop": true,
+    "declaration": true,
     "plugins": [ ]
   },
   "include": [ "src" ],
