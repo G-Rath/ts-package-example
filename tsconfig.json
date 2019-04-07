@@ -32,8 +32,12 @@
     "removeComments": true,
     "esModuleInterop": true,
     "declaration": true,
-    "plugins": [ ]
+    "plugins": [
+      {
+        "transform": "@zerollup/ts-transform-paths",
+        "exclude": ["*"]
+      }
+    ]
   },
-  "include": [ "src" ],
   "exclude": [ "node_modules" ]
 }
