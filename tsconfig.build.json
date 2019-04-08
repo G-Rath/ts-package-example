@@ -1,9 +1,6 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "es2015",
-    "module": "es2015",
-    "lib": [ "es2018" ],
     "rootDir": "src",
     "outDir": "lib",
     "paths": {

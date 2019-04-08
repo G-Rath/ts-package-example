@@ -12,12 +12,13 @@
   },
   "license": "ISC",
   "author": "Gareth Jones",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "./lib/index.js",
+  "module": "dist/ts-package-example.es.js",
+  "types": "./lib/index.d.ts",
+  "unpkg": "./dist/ts-packge-example.global.min.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "jest"
